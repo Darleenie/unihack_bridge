@@ -1,0 +1,79 @@
+body{
+    background-color: black;
+}
+
+#videoElement {
+	max-width: 352px;
+	height: 519px;
+	object-fit: cover;
+	background-image: url('../images/camera-bg.jpg');
+	position: absolute;
+	/* margin: auto; */
+	/* text-align: center; */
+	margin-left: 3.2%;
+	margin-right: 3.2%;
+	margin-top: 5.7%;
+	margin-bottom: 16.49%;
+}
+
+.round-button {
+	width: 60px;
+	height: 60px;
+	font-size: 24px;
+	/* cursor: pointer; */
+	/* color: #fff; */
+	background-color: red;
+	border: 2px solid white;
+	border-radius: 50%;
+	bottom: 20px;
+	margin-top:156%;
+	/* stroke:#fff;
+	stroke-width:30; */
+}
+
+.record-img {
+	bottom: 20px;
+	margin-top:156%;
+}
+
+button {
+	background-color:black;
+	border: none;
+}
+
+
+#overlay {
+	display: none; /* Hidden by default */
+	position: fixed;
+	top: 440px; /*Stay in place*/
+	left: 12px;
+	z-index: 1; /* Sit on top */
+	padding: 5px; /* Location of the box */
+	width: 352px; /* Full width */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: white; 
+}
+
+/* .box {
+	width: 110px;
+	height: 100px;
+	background: gray;
+	text-align: center;
+    display: inline-block;
+  }
+   */
+
+   
+  /* div.box{
+	  color: white;
+
+  }
+ */
+
+  
+ /* .wrapper {
+  overflow: hidden;
+
+  text-align: center;
+} */
+

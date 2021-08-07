@@ -1,0 +1,22 @@
+{
+	"comments": [
+		{
+			"type": "video",
+			"id": 6,
+			"date": "FEB 3, 2021",
+			"location": "San Diego, CA, USA",
+			"description": "Loves Trukese navigators",
+			"imageURL": "/images/text_send.png"	
+		},
+		{
+			"type": "video",
+			"id": 6,
+			"date": "FEB 3, 2021",
+			"location": "San Diego, CA, USA",
+			"description": "Loves Trukese navigators",
+			"imageURL": "/images/pic_send.png"	
+		}
+		
+		
+	]
+}

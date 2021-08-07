@@ -1,0 +1,82 @@
+5<html>
+<head>
+	<title>Edit</title>
+	<meta charset="utf-8">
+	
+	{{!-- Add script --}}
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/eventHandler.js"></script>
+
+	{{!-- Add link --}}
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/edit.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+        {{!-- menu icon --}}
+			    <div class="block" id="menu-icon">
+				    <a href="/manage"><i class="fa fa-chevron-left" style="font-size: 20px; color: #995762; text-align:left"></i></a>
+			    </div>
+
+        {{!-- title --}}
+			<div>
+				<h3>Manage - Edit</h3>
+			</div>
+
+
+        {{!-- diary --}}
+            <div class="container">
+                <div class="edit-diary">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/19_June-1_%2850384477361%29.jpg" alt="Lorem Pixel image" class="img-responsive">
+                
+<<<<<<< HEAD
+                
+=======
+                {{!-- <a href="#"><button class="edit" id="edit-thumbnail"><h3 class="text">Edit thumbnail</h3></button></a> --}}
+>>>>>>> 77b35cff699aa4de6ba122b24fd4fdf346593de5
+                </div>
+                
+
+                <div>
+                    <p class="info">Feb 10, 2021</p>
+<<<<<<< HEAD
+                    
+                    
+                    <p class="info">Poway, CA, USA</p>
+                   
+=======
+                    {{!-- <a href="#"><button class="edit" id="edit-date"><h3 class="text">Edit date</h3></button></a> --}}
+                    
+                   <p class="info">Poway, CA, USA</p>
+                    {{!-- <a href="#"><button class="edit" id="edit-location"><h3 class="text">Edit location</h3></button></a> --}}
+>>>>>>> 77b35cff699aa4de6ba122b24fd4fdf346593de5
+                </div>
+
+                <hr>
+            </div>
+
+
+            <div class="container">
+                    {{#each tags}}
+                    <div class="each-tag" id="{{id}}">
+                    <button class="tag-button">
+                        <p class="tag-text">{{name}}</p>
+                     </button>
+                     </div>
+                    {{/each}}
+
+                    <form role="form" method="get" action="/addTag">
+                    <input type="text" placeholder="Enter tag name" name="tag" required>            
+                    <button type="submit" class="edit" id="edit-tags"><h3 class="text">Add tag</h3></button>
+                    </form>
+            </div>  
+
+
+
+</body>
+</html>

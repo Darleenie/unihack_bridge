@@ -1,0 +1,112 @@
+<html>
+
+<head>
+	<title>Bridge</title>
+	<meta charset="utf-8">
+
+	{{!-- Add script --}}
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/jquery-3.5.1.js"></script>
+	<script src="/js/eventHandler.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/jquery-ui.min.js"></script>
+	{{!-- <script src="js/diaryHandler.js"></script> --}}
+
+	{{!-- Add link --}}
+	<link rel="stylesheet" href="/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/css/jquery-ui.css">
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+	<link href="/css/menu.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		b1 {
+			color: white;
+		}
+	</style>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	{{!-- put icons in a row --}}
+	<div class="top-menu" style="z-index: 100; left: 16%;">
+		<div style="left:0%;top:0%;" id="rectangle"></div>
+
+		{{!-- search bar --}}
+		<div class="imgcontainer block" >
+            <img id="profilepic" src="/images/profile.png" style="width:100; height:auto" alt="profile-pic">
+        </div>
+
+		{{!-- filter icon --}}
+		<div class="block">
+			 <br>Kaixin Wang <br> <div style="color:#06BEB8"><u>Edit Profile</u> </div>
+		</div>
+
+	</div>
+	<div class="top-menu" style="top:25%;left:15%;z-index: 100;">
+		<a href="" style="color:#06BEB8" class="block" ><u>Donee</u></a>
+		<a class="block"></a>
+		<a class="block"></a>
+		<a class="block"></a>
+		<a href="" style="color:black"  class="block">My Donation</a>
+	</div>
+	
+{{!-- diary --}}
+	<div class="container" style="margin-top: 230px;">
+		<div class="sub">Current Donee</div>
+		<div class="diary-page" style="z-index:-100;">
+			{{#each now}}
+			<a href="">
+				<button class="diary">
+					{{!-- <div id="date">
+						<h4 class="block" style="text-shadow: 4px 4px 5px #797979;">{{date}}</h4>
+					</div> --}}
+					<img src="{{imageURL}}" alt="Lorem Pixel image" class="img-responsive">
+					
+				</button>
+			</a>
+			<hr>
+			{{/each}}
+		</div>
+
+	</div>
+	{{!-- diary --}}
+	<div class="container">
+		<div class="sub">Past Donee</div>
+		<div class="diary-page" style="z-index:-100">
+			{{#each past}}
+			<a href="">
+				<button class="diary">
+					{{!-- <div id="date">
+						<h4 style="text-shadow: 4px 4px 5px #797979;">{{date}}</h4>
+					</div> --}}
+					<img src="{{imageURL}}" alt="Lorem Pixel image" class="img-responsive">
+				</button>
+			</a>
+			<hr>
+			{{/each}}
+		</div>
+
+	</div>
+	
+
+	{{!-- lower menu --}}
+	<div id="rectangle" style="bottom: 0; height: 80px; background: white;"></div>
+	<div class="lower-menu" id="navbar">
+		<a href="/world" class="block"><img src="/images/bridge_inactive.png" style="width:50; height:auto">
+</a>
+		<a class="block"></a>
+		<a href="/create" class="block"><img src="/images/profile_active.png" style="width:50; height:auto"></a>
+		<a class="block"></a>
+		<a href="/account" class="block"><img src="/images/story_inactive.png" style="width:50; height:auto"></a>
+				
+	</div>
+
+
+</body>
+
+</html>

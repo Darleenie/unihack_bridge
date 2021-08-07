@@ -1,0 +1,41 @@
+{
+	"now": [
+		{
+			"type": "video",
+			"id": 1,
+			"date": "FEB 10, 2021",
+			"location": "Poway, CA, USA",
+			"description": "Has awesome pet mice",
+			"imageURL": "images/p1_child.png"			
+		},
+		{
+			"type": "video",
+			"id": 6,
+			"date": "FEB 3, 2021",
+			"location": "San Diego, CA, USA",
+			"description": "Loves Trukese navigators",
+			"imageURL": "/images/p2_child.png"	
+		}
+	],
+	"past": [
+		{
+			"type": "video",
+			"id": 1,
+			"date": "FEB 10, 2021",
+			"location": "Poway, CA, USA",
+			"description": "Has awesome pet mice",
+			"imageURL": "images/p3_child.png"			
+		},
+		{
+			"type": "video",
+			"id": 6,
+			"date": "FEB 3, 2021",
+			"location": "San Diego, CA, USA",
+			"description": "Loves Trukese navigators",
+			"imageURL": "/images/p4_child.png"	
+		}
+	],
+
+	"types": "video",
+	"whitespace": ""
+}
