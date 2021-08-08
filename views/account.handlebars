@@ -1,60 +1,51 @@
 <html>
-    <head>
-        <title>Account</title>
-        <meta charset="utf-8">
-        
-        {{!-- Add script --}}
-        <script src="js/bootstrap.js"></script>
-        <script src="js/jquery-1.11.0.js"></script>
-        <script src="js/eventHandler.js"></script>
-        {{> facebook}}
-	    <script src="js/facebook.js"></script>
 
-        {{!-- Add link --}}
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
-        <link href="css/account.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <title>Bridge Story</title>
+    <meta charset="utf-8">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+   {{!-- Add script --}}
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/jquery-3.5.1.js"></script>
+	<script src="/js/eventHandler.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/jquery-ui.min.js"></script>
+	{{!-- <script src="js/diaryHandler.js"></script> --}}
 
-    <body>
-    
-            
-        {{!-- menu icon --}}
-		<div class="block" id="menu-icon">
-			<a href="/index"><i class="fa fa-chevron-left" style="font-size: 20px; color: #995762; text-align:left"></i></a>
-		</div>
+	{{!-- Add link --}}
+	<link rel="stylesheet" href="/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/css/jquery-ui.css">
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+	<link href="/css/menu.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        {{!-- profile info --}}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-        <div class="imgcontainer">
-            <img id="profilepic" src="/images/pic.png" style="width:130; height:auto" alt="profile-pic">
-        </div>
+<body>
 
-        <div class="profile-card"> 
-            {{!-- <h1 id="username" style="text-align:center" >Username</h1> --}}
+	{{!-- put icons in a row --}}
+	<div class="top-menu" style="z-index: 100;">
+		<div style="left:0%;top:0%;height:60px" id="rectangle"></div>
+    <a href="/" style="z-index: 2;"><i class="fa fa-arrow-left block" style="font-size: 20px; color: black; margin-top:0%; margin-left:-60px"></i></a> 
+				<a class="block"></a>
+		<a class="block"></a>
 
-            <h3 style="text-align:center">Email: compass@iamhappy.com</h3>
-            <h3 style="text-align:center" >Password: *********</h3>
+    <div class="block" style="margin-top:0%;z-index: 2;"> 
+      Story  
+    </div>
+    		<a class="block"></a>
+		<a class="block"></a>
+		<a class="block"></a>
 
-            <div id="overlay-alert">
-						<div class="alert-box">
-							<div id="content">
-								<div><h3 id="title">Are you sure to log out?</h3></div>
-								<button id="cancel-button" class="alert-button"><p class="alert-text">Cancel</p></button>
-								<button id="yes-button" class="alert-button"><p class="alert-text">Yes</p></button>
-							</div>
-						</div>
-			</div>
+    <a href="/content/1" style="opacity:0;margin-top:-1%;margin-left:-10px;z-index: 2;"><img src="/images/Reply.png" style="width:50px"></a>
+	</div>
 
-            <a><button id="logout">
-                <h2 style="font-size: 20px; color: white; line-height: 0; margin-bottom: 16px;">LOGOUT</h2>
-            </button></a>
-        
+	{{!-- lower menu --}}
+	<div id="rectangle" style="bottom: 0; height: 30px; background: white;"></div>
 
-        </div>
-    </body>
+</body>
+
 </html>
